@@ -1,5 +1,5 @@
 /.idea/
-/.venv/Lib/
-/.venv/Scripts/
+/Lib/
+/Scripts/
 __pycache__
-.venv/pyvenv.cfg
+pyvenv.cfg
