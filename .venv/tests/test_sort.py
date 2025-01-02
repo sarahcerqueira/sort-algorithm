@@ -4,6 +4,8 @@ from app.models.bubbleSort import *
 from app.models.bubbleSortPlus import *
 from app.models.insertionSort import *
 from app.models.selectionSort import *
+from app.models.quickSortLomuto import *
+from app.models.quickSortHoare import *
 
 
 class TestSortAlgorithm(unittest.TestCase):
@@ -19,6 +21,12 @@ class TestSortAlgorithm(unittest.TestCase):
 
     def test_selectionSort(self):
         self.sortList(SelectionSort)
+
+    def test_quickSortLomuto(self):
+        self.sortList(QuickSortLomuto)
+
+    def test_quickSortHoare(self):
+        self.sortList(QuickSortHoare)
 
     def sortList(self, algorithmClass:SortTemplate):
         datalist = list(random.randint(10000, size=100))
