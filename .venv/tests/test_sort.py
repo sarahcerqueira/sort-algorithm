@@ -6,6 +6,7 @@ from app.models.insertionSort import *
 from app.models.selectionSort import *
 from app.models.quickSortLomuto import *
 from app.models.quickSortHoare import *
+from app.models.quickSortNotInPlace import *
 
 
 class TestSortAlgorithm(unittest.TestCase):
@@ -27,6 +28,9 @@ class TestSortAlgorithm(unittest.TestCase):
 
     def test_quickSortHoare(self):
         self.sortList(QuickSortHoare)
+
+    def test_quickSortNotInPlace(self):
+        self.sortList(QuickSortNotInPlace)
 
     def sortList(self, algorithmClass:SortTemplate):
         datalist = list(random.randint(10000, size=100))
