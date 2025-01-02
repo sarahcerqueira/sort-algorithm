@@ -1,5 +1,7 @@
 # Algoritmos de ordenação
 
+Python 3.13
+
 Este repositório contém algoritmos de ordenação.
 
 No link abaixo é possível acessar um código no jupter notebook, onde são gerados gráficos para comparar os algoritmos:
