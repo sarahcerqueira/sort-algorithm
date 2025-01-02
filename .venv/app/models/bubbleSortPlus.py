@@ -1,12 +1,15 @@
 from app.templates.sortTemplate import *
 
-class BubbleSort(SortTemplate):
+class BubbleSortPlus(SortTemplate):
 
     def sort(datatosort:list)->list:
-        i = len(datatosort) - 1
-        while i > 0:
+        ordering = True
+        i = len(datatosort) -1
+        while ordering:
+            ordering = False
+
             for j in range(0, i):
                 if datatosort[j] > datatosort[j + 1]:
                     datatosort[j], datatosort[j + 1] = datatosort[j + 1], datatosort[j]
-            i -= 1
+                    ordering = True
         return datatosort
